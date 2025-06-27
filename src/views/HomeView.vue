@@ -17,8 +17,8 @@
               app.status === 'Aktivna'
                 ? 'bg-green-100 text-green-700'
                 : app.status === 'Beta'
-                  ? 'bg-yellow-100 text-yellow-700'
-                  : 'bg-gray-200 text-gray-600',
+                ? 'bg-yellow-100 text-yellow-700'
+                : 'bg-gray-200 text-gray-600',
             ]"
           >
             {{ app.status }}
@@ -51,79 +51,70 @@ const apps = [
     name: 'NetDesk',
     iconPath: new URL('@/assets/icons/netdesk.png', import.meta.url).href,
     desc: 'Upravljanje IP adresama i RDP konekcijama.',
-    link: `${baseUrl}:5174`,
+    link: `${baseUrl}:${import.meta.env.VITE_NETDESK_PORT}`,
     status: 'Aktivna',
   },
   {
     name: 'NetPulse',
     iconPath: new URL('@/assets/icons/netpulse.png', import.meta.url).href,
     desc: 'Status računara i pingovanje mreže.',
-    // link: `${baseUrl}:5175`,
-    link: '/not-found',
+    link: `${baseUrl}:${import.meta.env.VITE_NETPULSE_PORT}`,
     status: 'U razvoju',
   },
   {
     name: 'AssetMap',
     iconPath: new URL('@/assets/icons/assetmap.png', import.meta.url).href,
     desc: 'Inventar hardverskih i softverskih komponenti.',
-    // link: `${baseUrl}:5176`,
-    link: '/not-found',
+    link: `${baseUrl}:${import.meta.env.VITE_ASSETMAP_PORT}`,
     status: 'U razvoju',
   },
   {
     name: 'ChangeTrack',
     iconPath: new URL('@/assets/icons/changetrack.png', import.meta.url).href,
     desc: 'Zapis svih mrežnih promena.',
-    // link: `${baseUrl}:5177`,
-    link: '/not-found',
+    link: `${baseUrl}:${import.meta.env.VITE_CHANGETRACK_PORT}`,
     status: 'U razvoju',
   },
   {
     name: 'ScriptCast',
     iconPath: new URL('@/assets/icons/scriptcast.png', import.meta.url).href,
     desc: 'Slanje i izvršavanje skripti na udaljenim računarima.',
-    // link: `${baseUrl}:5178`,
-    link: '/not-found',
+    link: `${baseUrl}:${import.meta.env.VITE_SCRIPTCAST_PORT}`,
     status: 'U razvoju',
   },
   {
     name: 'SecuScan',
     iconPath: new URL('@/assets/icons/secuscan.png', import.meta.url).href,
     desc: 'Stanje antivirus zaštite i ažuriranja.',
-    // link: `${baseUrl}:5179`,
-    link: '/not-found',
+    link: `${baseUrl}:${import.meta.env.VITE_SECUSCAN_PORT}`,
     status: 'U razvoju',
   },
   {
     name: 'SafeKey',
     iconPath: new URL('@/assets/icons/safekey.png', import.meta.url).href,
     desc: 'Baza sistemskih lozinki sa pristupom po nivou.',
-    // link: `${baseUrl}:5180`,
-    link: '/not-found',
+    link: `${baseUrl}:${import.meta.env.VITE_SAFEKEY_PORT}`,
     status: 'U razvoju',
   },
   {
     name: 'Maintainer',
     iconPath: new URL('@/assets/icons/maintainer.png', import.meta.url).href,
     desc: 'Raspored održavanja i zadaci u kalendaru.',
-    // link: `${baseUrl}:5181`,
-    link: '/not-found',
+    link: `${baseUrl}:${import.meta.env.VITE_MAINTAINER_PORT}`,
     status: 'U razvoju',
   },
   {
     name: 'FileDrive',
     iconPath: new URL('@/assets/icons/filedrive.png', import.meta.url).href,
     desc: 'Lokalna platforma za deljenje fajlova i upravljanje pristupom.',
-    // link: `${baseUrl}:5182`,
-    link: '/not-found',
+    link: `${baseUrl}:${import.meta.env.VITE_FILEDRIVE_PORT}`,
     status: 'U razvoju',
   },
   {
     name: 'HelpDesk',
     iconPath: new URL('@/assets/icons/helpdesk.png', import.meta.url).href,
     desc: 'Sistem za prijavu i praćenje tehničkih problema.',
-    // link: `${baseUrl}:5183`,
-    link: '/not-found',
+    link: `${baseUrl}:${import.meta.env.VITE_HELPDESK_PORT}`,
     status: 'U razvoju',
   },
 ]
