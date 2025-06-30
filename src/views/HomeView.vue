@@ -115,7 +115,7 @@ const apps = [
     iconPath: new URL('@/assets/icons/helpdesk.png', import.meta.url).href,
     desc: 'Sistem za prijavu i praćenje tehničkih problema.',
     link: `${baseUrl}:${import.meta.env.VITE_HELPDESK_PORT}`,
-    status: 'Beta',
+    status: 'Aktivna',
   },
 ]
 
