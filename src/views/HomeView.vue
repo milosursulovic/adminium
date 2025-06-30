@@ -1,8 +1,6 @@
 <template>
   <div class="min-h-screen bg-slate-100 py-10 px-4">
     <div class="max-w-7xl mx-auto">
-      <h1 class="text-3xl font-bold text-center mb-10 text-slate-800">🧠 Adminium</h1>
-
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div
           v-for="app in apps"
@@ -10,7 +8,6 @@
           @click="goTo(app.link)"
           class="bg-white rounded-2xl shadow-lg p-6 cursor-pointer hover:shadow-xl transition relative"
         >
-          <!-- Status Badge -->
           <span
             :class="[
               'absolute top-3 right-3 text-xs font-medium px-2 py-1 rounded-full',
@@ -24,7 +21,6 @@
             {{ app.status }}
           </span>
 
-          <!-- Ikonica (slika) + Opis -->
           <div class="flex items-center gap-4 mb-4">
             <img :src="app.iconPath" alt="ikonica" class="w-10 h-10 object-contain" />
             <div>
@@ -33,7 +29,6 @@
             </div>
           </div>
 
-          <!-- Footer -->
           <div class="text-right">
             <span class="text-blue-600 hover:underline text-sm">Otvori aplikaciju →</span>
           </div>
