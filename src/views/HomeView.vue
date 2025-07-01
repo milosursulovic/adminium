@@ -103,7 +103,7 @@ const apps = [
     iconPath: new URL('@/assets/icons/filedrive.png', import.meta.url).href,
     desc: 'Lokalna platforma za deljenje fajlova i upravljanje pristupom.',
     link: `${baseUrl}:${import.meta.env.VITE_FILEDRIVE_PORT}`,
-    status: 'U razvoju',
+    status: 'Beta',
   },
   {
     name: 'HelpDesk',
