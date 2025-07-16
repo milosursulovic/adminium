@@ -112,6 +112,20 @@ const apps = [
     link: `${baseUrl}:${import.meta.env.VITE_HELPDESK_PORT}`,
     status: 'Aktivna',
   },
+  {
+    name: 'DNS Logovi',
+    iconPath: new URL('@/assets/icons/dnslogger.png', import.meta.url).href,
+    desc: 'Sistem za praćenje DNS logova.',
+    link: `${baseUrl}:${import.meta.env.VITE_DNS_LOGGER_PORT}`,
+    status: 'Beta',
+  },
+  {
+    name: 'SQLite Čitač',
+    iconPath: new URL('@/assets/icons/sqliteviewer.png', import.meta.url).href,
+    desc: 'Alat za čitanje SQLite baza.',
+    link: `${baseUrl}:${import.meta.env.VITE_DNS_LOGGER_PORT}`,
+    status: 'Beta',
+  },
 ]
 
 function goTo(link) {
