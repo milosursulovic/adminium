@@ -123,7 +123,7 @@ const apps = [
     name: 'SQLite Čitač',
     iconPath: new URL('@/assets/icons/sqliteviewer.png', import.meta.url).href,
     desc: 'Alat za čitanje SQLite baza.',
-    link: `${baseUrl}:${import.meta.env.VITE_DNS_LOGGER_PORT}`,
+    link: `${baseUrl}:${import.meta.env.VITE_SQLITE_VIEWER_PORT}`,
     status: 'Beta',
   },
 ]
