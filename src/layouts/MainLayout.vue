@@ -6,7 +6,7 @@
         <LogoutButton />
       </div>
     </header>
-    <main class="max-w-7xl mx-auto px-4 py-6">
+    <main>
       <router-view />
     </main>
     <footer class="text-center text-sm text-gray-500 py-4">
