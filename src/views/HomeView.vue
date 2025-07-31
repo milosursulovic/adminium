@@ -55,7 +55,7 @@ const apps = [
     iconPath: new URL('@/assets/icons/netpulse.png', import.meta.url).href,
     desc: 'Status računara i pingovanje mreže.',
     link: `${baseUrl}:${import.meta.env.VITE_NETPULSE_PORT}`,
-    status: 'U razvoju',
+    status: 'Beta',
   },
   {
     name: 'AssetMap',
