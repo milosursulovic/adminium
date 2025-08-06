@@ -127,6 +127,13 @@ const apps = [
     link: `${baseUrl}:${import.meta.env.VITE_SQLITE_VIEWER_PORT}`,
     status: 'Aktivna',
   },
+  {
+    name: 'Digitalni Revers',
+    iconPath: new URL('@/assets/icons/digital-equipment-assignment.png', import.meta.url).href,
+    desc: 'Digitalni alat za kreiranje reversa zadužene opreme.',
+    link: `${baseUrl}:${import.meta.env.VITE_DIGITAL_EQUIPMENT_ASSIGNMENT_PORT}`,
+    status: 'Beta',
+  },
 ]
 
 function goTo(link) {
