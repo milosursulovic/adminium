@@ -131,7 +131,7 @@ const apps = [
     name: 'Digitalni Revers',
     iconPath: new URL('@/assets/icons/digital-equipment-assignment.png', import.meta.url).href,
     desc: 'Digitalni alat za kreiranje reversa zadužene opreme.',
-    link: `${baseUrl}:${import.meta.env.VITE_DIGITAL_EQUIPMENT_ASSIGNMENT_PORT}`,
+    link: `http://${import.meta.env.VITE_HOST_IP_ADDRESS}:${import.meta.env.VITE_DIGITAL_EQUIPMENT_ASSIGNMENT_PORT}`,
     status: 'Beta',
   },
 ]
