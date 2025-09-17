@@ -51,13 +51,6 @@ const apps = [
     status: 'Aktivna',
   },
   {
-    name: 'NetPulse',
-    iconPath: new URL('@/assets/icons/netpulse.png', import.meta.url).href,
-    desc: 'Status računara i pingovanje mreže.',
-    link: `${baseUrl}:${import.meta.env.VITE_NETPULSE_PORT}`,
-    status: 'Aktivna',
-  },
-  {
     name: 'AssetMap',
     iconPath: new URL('@/assets/icons/assetmap.png', import.meta.url).href,
     desc: 'Inventar hardverskih i softverskih komponenti.',
